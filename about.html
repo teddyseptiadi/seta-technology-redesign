@@ -50,7 +50,7 @@
 </head>
 <body class="bg-brand-black text-slate-100 antialiased selection:bg-brand-cyan selection:text-brand-black flex flex-col min-h-screen">
 
-  <!-- TOP BAR -->
+  <!-- TOP INDUSTRIAL STATUS BAR -->
   <div class="border-b border-brand-border bg-brand-black/90 text-xs py-2 px-4 sm:px-8">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 font-mono">
       <div class="flex items-center space-x-4 text-slate-400">
@@ -66,6 +66,8 @@
           <i data-lucide="phone-call" class="w-3.5 h-3.5 text-brand-cyan"></i>
           <span>Direct Hotline: <strong class="text-white">+62 822 1392 8230</strong></span>
         </a>
+        <span class="text-slate-700">|</span>
+        <a href="mailto:raden@seta.co.id" class="hover:text-brand-cyan transition">raden@seta.co.id</a>
       </div>
     </div>
   </div>
@@ -73,6 +75,8 @@
   <!-- NAVIGATION -->
   <nav class="sticky top-0 z-50 bg-brand-black/95 backdrop-blur-xl border-b border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+      
+      <!-- BRAND LOGO -->
       <a href="index.html" class="flex items-center space-x-3.5 group">
         <div class="w-10 h-10 rounded bg-gradient-to-br from-brand-blue to-brand-cyan flex items-center justify-center font-extrabold text-white text-lg tracking-widest shadow-glow-blue">
           ST
@@ -87,16 +91,38 @@
         </div>
       </a>
 
-      <div class="hidden lg:flex items-center space-x-8 text-xs font-mono font-bold uppercase tracking-wider text-slate-300">
-        <a href="index.html" class="hover:text-brand-cyan transition">Home</a>
-        <a href="product.html" class="hover:text-brand-cyan transition">Bowl Feeder</a>
-        <a href="product-automatic-sorting-machine.html" class="hover:text-brand-cyan transition">Automatic Sorting Machine</a>
-        <a href="product-sorting-house.html" class="hover:text-brand-cyan transition">Sorting House</a>
-        <a href="about.html" class="text-brand-cyan">Engineering & Profile</a>
-        <a href="download.html" class="hover:text-brand-cyan transition">Downloads</a>
-        <a href="contact.html" class="hover:text-brand-cyan transition">Contact</a>
+      <!-- NAV ITEMS -->
+      <div class="hidden lg:flex items-center space-x-8 text-xs font-mono font-bold uppercase tracking-wider">
+        <a href="index.html" class="text-slate-300 hover:text-brand-cyan transition">Home</a>
+        
+        <!-- PRODUCTS DROPDOWN -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-slate-300 hover:text-brand-cyan transition py-2">
+            <span>Machinery & Systems</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-500 group-hover:rotate-180 transition"></i>
+          </button>
+          <div class="absolute left-0 top-full hidden group-hover:block w-80 bg-brand-card rounded-xl border border-brand-border shadow-2xl p-3 space-y-1.5 backdrop-blur-2xl">
+            <a href="product.html" class="block p-3 rounded-lg hover:bg-brand-cardHover border border-transparent hover:border-brand-border transition">
+              <div class="font-bold text-xs text-white">Vibratory Bowl Feeder</div>
+              <div class="text-[11px] text-slate-400 font-sans mt-0.5">Sistem orientasi part otomatis hingga 600 PPM</div>
+            </a>
+            <a href="product-automatic-sorting-machine.html" class="block p-3 rounded-lg hover:bg-brand-cardHover border border-transparent hover:border-brand-border transition">
+              <div class="font-bold text-xs text-white">Automatic Sorting Machine</div>
+              <div class="text-[11px] text-slate-400 font-sans mt-0.5">Inspeksi AI Optical 2D/3D (PSG Series)</div>
+            </a>
+            <a href="product-sorting-house.html" class="block p-3 rounded-lg hover:bg-brand-cardHover border border-transparent hover:border-brand-border transition">
+              <div class="font-bold text-xs text-white">Integrated Sorting House</div>
+              <div class="text-[11px] text-slate-400 font-sans mt-0.5">Cell peredam suara &lt; 70 dB(A) & packaging line</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="text-brand-cyan transition">Engineering & Profile</a>
+        <a href="download.html" class="text-slate-300 hover:text-brand-cyan transition">Downloads</a>
+        <a href="contact.html" class="text-slate-300 hover:text-brand-cyan transition">Contact</a>
       </div>
 
+      <!-- CTA BUTTON -->
       <div class="flex items-center space-x-4">
         <a href="contact.html#configurator" class="px-5 py-2.5 rounded bg-brand-blue hover:bg-brand-blueLight text-white text-xs font-mono font-bold uppercase tracking-wider transition shadow-glow-blue flex items-center gap-2">
           <i data-lucide="calculator" class="w-4 h-4 text-brand-cyan"></i>
@@ -250,21 +276,27 @@
   </section>
 
   <!-- FOOTER -->
+    <!-- STANDARDIZED INDUSTRIAL FOOTER -->
   <footer class="bg-brand-black text-white border-t border-brand-border pt-16 pb-12 text-xs mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+      
       <div class="md:col-span-2">
         <div class="flex items-center space-x-3 mb-4">
-          <div class="w-8 h-8 rounded bg-brand-blue flex items-center justify-center font-bold text-white">ST</div>
+          <div class="w-8 h-8 rounded bg-brand-blue flex items-center justify-center font-bold text-white font-heading">ST</div>
           <span class="text-base font-extrabold tracking-tight font-heading">PT SETA TECHNOLOGY ASIA</span>
         </div>
         <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
           Penyedia terkemuka sistem Vibratory Bowl Feeder, Mesin Sortir Optik AI, dan solusi otomatisasi lini perakitan manufaktur presisi tinggi di Indonesia.
         </p>
+        <div class="mt-4 text-slate-400 font-mono">
+          <div>HQ: Gedung Grand Slipi Tower Lt. 9, Jakarta Barat 11480</div>
+          <div class="mt-1">Hotline: <strong class="text-brand-cyan">+62 822 1392 8230</strong> | Email: raden@seta.co.id</div>
+        </div>
       </div>
 
       <div>
         <h5 class="font-bold text-slate-200 uppercase font-mono tracking-wider mb-3">Machinery Suite</h5>
-        <ul class="space-y-2 text-slate-400">
+        <ul class="space-y-2 text-slate-400 font-mono text-xs">
           <li><a href="product.html" class="hover:text-brand-cyan transition">Vibratory Bowl Feeder</a></li>
           <li><a href="product-automatic-sorting-machine.html" class="hover:text-brand-cyan transition">Automatic Sorting Machine</a></li>
           <li><a href="product-sorting-house.html" class="hover:text-brand-cyan transition">Integrated Sorting House</a></li>
@@ -273,12 +305,16 @@
       </div>
 
       <div>
-        <h5 class="font-bold text-slate-200 uppercase font-mono tracking-wider mb-3">Kontak Resmi</h5>
-        <p class="text-slate-400">Gedung Grand Slipi Tower Lt. 9 Jakarta Barat</p>
-        <p class="text-slate-400 mt-1 font-mono">Hotline: <strong class="text-brand-cyan">+62 822 1392 8230</strong></p>
-        <p class="text-slate-400 mt-1">Email: raden@seta.co.id</p>
+        <h5 class="font-bold text-slate-200 uppercase font-mono tracking-wider mb-3">Direct Actions</h5>
+        <ul class="space-y-2 text-slate-400 font-mono text-xs">
+          <li><a href="about.html" class="hover:text-brand-cyan transition">Engineering & Profile</a></li>
+          <li><a href="contact.html#configurator" class="hover:text-brand-cyan transition">Kalkulator Kebutuhan RFQ</a></li>
+          <li><a href="contact.html" class="hover:text-brand-cyan transition">Hubungi Lead Engineer</a></li>
+        </ul>
       </div>
+
     </div>
+
     <div class="max-w-7xl mx-auto px-4 sm:px-8 mt-12 pt-6 border-t border-brand-border/60 text-center text-slate-500 font-mono">
       © 2026 PT SETA Technology Asia. Industrial Grade Engineering. All Rights Reserved.
     </div>
