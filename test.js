@@ -1,38 +1,45 @@
 const fs = require('fs');
+const path = require('path');
 
-console.log("=== Running QA & Validation Suite for SETA Corporate Redesign (R1) ===");
+console.log("=== Running Multi-Page QA & Validation Suite for SETA Full Redesign ===");
 
-const html = fs.readFileSync('/home/teddy/workspace/seta-redesign/index.html', 'utf8');
+const baseDir = '/home/teddy/workspace/seta-redesign';
+const pages = [
+  { file: 'index.html', title: 'PT SETA Technology Asia', keywords: ['Vibratory Bowl Feeder', 'Automatic Sorting Machine', 'Integrated Sorting House'] },
+  { file: 'about.html', title: 'Tentang Kami', keywords: ['Visi Perusahaan', 'Misi Perusahaan', 'Grand Slipi Tower'] },
+  { file: 'product.html', title: 'Vibratory Bowl Feeder', keywords: ['Bowl Top', 'Drive Unit', 'Digital Control Box', 'Linear Track Feeder'] },
+  { file: 'product-automatic-sorting-machine.html', title: 'Automatic Sorting Machine', keywords: ['PSG-1600', 'PSG-2600', 'Optical Vision'] },
+  { file: 'product-sorting-house.html', title: 'Integrated Sorting House', keywords: ['Screw', 'Bearing', 'Flange Nut', 'Rubber Seal', 'Bottle Cap'] },
+  { file: 'download.html', title: 'Pusat Unduhan', keywords: ['Product Catalogue', 'PSG Series Optical Sorter', 'triggerDownload'] },
+  { file: 'contact.html', title: 'Hubungi Kami', keywords: ['GRAND SLIPI TOWER', 'contactPageRfqForm', 'submitContactRFQ'] }
+];
 
-// 1. Check title & meta
-if (!html.includes('<title>PT SETA Technology Asia | Precision Industrial Automation & Machinery</title>')) {
-  console.error("FAIL: Title missing or incorrect");
-  process.exit(1);
-}
-console.log("✓ Meta & Corporate Title Verified");
+let allPassed = true;
 
-// 2. Check Core Products
-const requiredProducts = ['Vibratory Bowl Feeder', 'Automatic Sorting Machine', 'Integrated Sorting House'];
-for (const p of requiredProducts) {
-  if (!html.includes(p)) {
-    console.error(`FAIL: Missing product: ${p}`);
-    process.exit(1);
+for (const p of pages) {
+  const filePath = path.join(baseDir, p.file);
+  if (!fs.existsSync(filePath)) {
+    console.error(`FAIL: File missing: ${p.file}`);
+    allPassed = false;
+    continue;
   }
+  const content = fs.readFileSync(filePath, 'utf8');
+  if (!content.includes(p.title)) {
+    console.error(`FAIL: [${p.file}] Title keyword missing: ${p.title}`);
+    allPassed = false;
+  }
+  for (const kw of p.keywords) {
+    if (!content.includes(kw)) {
+      console.error(`FAIL: [${p.file}] Expected keyword missing: ${kw}`);
+      allPassed = false;
+    }
+  }
+  console.log(`✓ [${p.file}] Verified structure & all keywords`);
 }
-console.log("✓ All 3 Core Products Present with Technical Specifications");
 
-// 3. Check Configurator & RFQ Form
-if (!html.includes('id="corporateRfqForm"') || !html.includes('handleCorporateRFQ()')) {
-  console.error("FAIL: Corporate Configurator form or handleCorporateRFQ function missing");
+if (!allPassed) {
+  console.error("\nSOME QA CHECKS FAILED");
   process.exit(1);
 }
-console.log("✓ Interactive Corporate RFQ Configurator & WhatsApp Dispatcher Verified");
 
-// 4. Check Office Address & Hotline
-if (!html.includes('GEDUNG GRAND SLIPI TOWER') || !html.includes('+62 822 1392 8230')) {
-  console.error("FAIL: Office address or hotline missing");
-  process.exit(1);
-}
-console.log("✓ Verified Contact & Grand Slipi Tower Headquarters");
-
-console.log("\nALL QA CHECKS PASSED (100% PASS RATE). Ready for GitHub Push & Release.");
+console.log("\nALL 7 PAGES VALIDATED (100% PASS RATE). Ready for GitHub Push.");

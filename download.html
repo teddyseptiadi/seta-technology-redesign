@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pusat Unduhan & Katalog Teknis | PT SETA Technology Asia</title>
+  <meta name="description" content="Download lembar spesifikasi teknis, katalog produk 2024-2026, panduan instalasi, dan CAD drawing PT SETA Technology Asia.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Inter"', 'sans-serif'],
+            heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            corporate: {
+              50: '#F8FAFC', 100: '#F1F5F9', 200: '#E2E8F0', 300: '#CBD5E1',
+              400: '#94A3B8', 500: '#64748B', 600: '#475569', 700: '#334155',
+              800: '#1E293B', 900: '#0F172A', 950: '#0A192F',
+            },
+            seta: {
+              primary: '#0052CC', dark: '#0747A6', light: '#0284C7',
+              accent: '#EA580C', soft: '#EFF6FF', border: '#E2E8F0',
+            }
+          },
+          boxShadow: {
+            'corporate': '0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04)',
+            'corporate-hover': '0 12px 30px -4px rgba(0, 82, 204, 0.12), 0 4px 10px -2px rgba(15, 23, 42, 0.06)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-corporate-900 antialiased selection:bg-seta-primary selection:text-white flex flex-col min-h-screen">
+
+  <!-- TOP BAR -->
+  <header class="bg-corporate-950 text-white text-xs py-2 px-4 sm:px-8 border-b border-corporate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-6 text-corporate-300">
+        <span class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          Industrial Feeding & Optical Sorting Center • ISO 9001 Compliant
+        </span>
+        <span class="hidden md:inline text-corporate-600">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-corporate-400">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-seta-light"></i> Grand Slipi Tower Lt. 9, Jakarta Barat
+        </span>
+      </div>
+      <div class="flex items-center space-x-5 text-corporate-300">
+        <a href="tel:+6282213928230" class="flex items-center gap-1.5 hover:text-white transition">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-seta-light"></i>
+          <span>Sales Hotline: <strong class="text-white font-mono">+62 822 1392 8230</strong></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-corporate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3.5 group">
+        <div class="w-11 h-11 rounded-lg bg-corporate-950 flex items-center justify-center text-white font-extrabold text-xl tracking-wider shadow-md">
+          <span class="text-seta-light">S</span>T
+        </div>
+        <div>
+          <div class="text-xl font-extrabold tracking-tight text-corporate-950 font-heading leading-tight group-hover:text-seta-primary transition">
+            SETA <span class="text-seta-primary">TECHNOLOGY</span>
+          </div>
+          <div class="text-[10px] tracking-widest text-corporate-500 font-mono font-semibold uppercase">
+            Asia • Industrial Automation
+          </div>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-corporate-700">
+        <a href="index.html" class="hover:text-seta-primary transition">Home</a>
+        <a href="product.html" class="hover:text-seta-primary transition">Bowl Feeder</a>
+        <a href="product-automatic-sorting-machine.html" class="hover:text-seta-primary transition">Automatic Sorting Machine</a>
+        <a href="product-sorting-house.html" class="hover:text-seta-primary transition">Sorting House</a>
+        <a href="about.html" class="hover:text-seta-primary transition">Tentang Kami</a>
+        <a href="download.html" class="text-seta-primary font-bold">Download</a>
+        <a href="contact.html" class="hover:text-seta-primary transition">Kontak</a>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="contact.html#configurator" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-seta-primary hover:bg-seta-dark text-white text-sm font-bold shadow-md transition">
+          Minta Penawaran (RFQ)
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="bg-corporate-950 text-white py-20 border-b border-corporate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold font-mono tracking-widest text-seta-light uppercase">Technical Documentation</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold font-heading mt-2">
+          Pusat Unduhan Brosur & Spesifikasi
+        </h1>
+        <p class="text-corporate-300 text-sm sm:text-base mt-4 leading-relaxed">
+          Silakan unduh dokumen spesifikasi teknis dan katalog produk kami di bawah ini. Jika Anda memerlukan model CAD 3D (.STEP) atau informasi teknis yang belum tercantum, silakan hubungi tim engineer kami.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD GRID -->
+  <section class="py-20 bg-corporate-50 border-b border-corporate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- CARD 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-corporate-200 shadow-corporate flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-seta-primary mb-4">
+              <i data-lucide="file-text" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold bg-corporate-100 text-corporate-600 px-2 py-0.5 rounded">PDF • 14 Halaman</span>
+            <h3 class="text-base font-bold text-corporate-950 font-heading mt-3">2024-2026 Master Product Catalogue</h3>
+            <p class="text-xs text-corporate-600 mt-2">Katalog lengkap seluruh lini produk Vibratory Bowl Feeder, Centrifugal Feeder, dan Komponen Orientasi.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-corporate-100">
+            <button onclick="triggerDownload('Master_Product_Catalogue_SETA.pdf')" class="w-full py-2.5 rounded-lg bg-seta-primary hover:bg-seta-dark text-white font-bold text-xs flex items-center justify-center gap-2 transition">
+              <i data-lucide="download" class="w-4 h-4"></i> Unduh Katalog (PDF)
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-corporate-200 shadow-corporate flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-200 flex items-center justify-center text-seta-light mb-4">
+              <i data-lucide="scan" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold bg-corporate-100 text-corporate-600 px-2 py-0.5 rounded">PDF • 8 Halaman</span>
+            <h3 class="text-base font-bold text-corporate-950 font-heading mt-3">PSG Series Optical Sorter Spec Sheet</h3>
+            <p class="text-xs text-corporate-600 mt-2">Spesifikasi detail kamera resolusi tinggi, tabel toleransi dimensi, dan wiring interlock PLC.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-corporate-100">
+            <button onclick="triggerDownload('PSG_Optical_Sorting_Machine_Spec.pdf')" class="w-full py-2.5 rounded-lg bg-seta-primary hover:bg-seta-dark text-white font-bold text-xs flex items-center justify-center gap-2 transition">
+              <i data-lucide="download" class="w-4 h-4"></i> Unduh Lembar Spesifikasi
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-corporate-200 shadow-corporate flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-orange-50 border border-orange-200 flex items-center justify-center text-seta-accent mb-4">
+              <i data-lucide="layout-grid" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold bg-corporate-100 text-corporate-600 px-2 py-0.5 rounded">PDF • 10 Halaman</span>
+            <h3 class="text-base font-bold text-corporate-950 font-heading mt-3">Sorting House & Workstation Guide</h3>
+            <p class="text-xs text-corporate-600 mt-2">Pedoman perancangan cell peredam suara, tata letak konveyor akumulasi, dan sertifikasi CE.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-corporate-100">
+            <button onclick="triggerDownload('Sorting_House_System_Guide.pdf')" class="w-full py-2.5 rounded-lg bg-seta-primary hover:bg-seta-dark text-white font-bold text-xs flex items-center justify-center gap-2 transition">
+              <i data-lucide="download" class="w-4 h-4"></i> Unduh Panduan Cell (PDF)
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-corporate-200 shadow-corporate flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 mb-4">
+              <i data-lucide="box" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-mono font-bold bg-corporate-100 text-corporate-600 px-2 py-0.5 rounded">CAD • STEP / DWG</span>
+            <h3 class="text-base font-bold text-corporate-950 font-heading mt-3">3D CAD Template & Envelope</h3>
+            <p class="text-xs text-corporate-600 mt-2">Dapatkan model 3D CAD untuk simulasi penempatan mesin pada layout lini pabrik Anda.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-corporate-100">
+            <a href="contact.html#configurator" class="w-full py-2.5 rounded-lg border border-corporate-300 bg-white hover:bg-corporate-50 text-corporate-800 font-bold text-xs flex items-center justify-center gap-2 transition">
+              <i data-lucide="mail" class="w-4 h-4"></i> Minta File 3D STEP
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- DOWNLOAD ALERT MODAL -->
+      <div id="downloadModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-corporate-950/60 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl border border-corporate-200 text-center">
+          <div class="w-14 h-14 rounded-full bg-blue-50 text-seta-primary flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="check-circle" class="w-8 h-8"></i>
+          </div>
+          <h4 class="text-lg font-bold text-corporate-950 font-heading">Dokumen Siap Diunduh</h4>
+          <p class="text-xs text-corporate-600 mt-2" id="modalFileName"></p>
+          <div class="mt-6 flex space-x-3">
+            <button onclick="closeModal()" class="flex-1 py-2.5 rounded-lg bg-seta-primary text-white font-bold text-xs hover:bg-seta-dark transition">
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-corporate-950 text-white border-t border-corporate-800 pt-16 pb-12 text-xs mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="w-8 h-8 rounded bg-seta-primary flex items-center justify-center font-bold text-white">ST</div>
+          <span class="text-base font-extrabold tracking-tight font-heading">PT SETA TECHNOLOGY ASIA</span>
+        </div>
+        <p class="text-corporate-400 text-xs leading-relaxed max-w-sm">
+          Penyedia terkemuka mesin Vibratory Bowl Feeder, Automatic Sorting System, dan solusi rekayasa otomasi pabrik berstandar presisi internasional di Indonesia.
+        </p>
+      </div>
+
+      <div>
+        <h5 class="font-bold text-corporate-200 uppercase font-mono tracking-wider mb-3">Navigasi</h5>
+        <ul class="space-y-2 text-corporate-400">
+          <li><a href="product.html" class="hover:text-white transition">Vibratory Bowl Feeder</a></li>
+          <li><a href="product-automatic-sorting-machine.html" class="hover:text-white transition">Automatic Sorting Machine</a></li>
+          <li><a href="product-sorting-house.html" class="hover:text-white transition">Integrated Sorting House</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="font-bold text-corporate-200 uppercase font-mono tracking-wider mb-3">Kontak</h5>
+        <p class="text-corporate-400">Gedung Grand Slipi Tower Lt. 9 Jakarta Barat</p>
+        <p class="text-corporate-400 mt-1">Hotline: +62 822 1392 8230</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 mt-12 pt-6 border-t border-corporate-800 text-center text-corporate-500">
+      © 2026 PT SETA Technology Asia. Hak Cipta Dilindungi Undang-Undang.
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function triggerDownload(fileName) {
+      document.getElementById('modalFileName').innerText = "File: " + fileName + " sedang diproses untuk Anda.";
+      document.getElementById('downloadModal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeModal() {
+      document.getElementById('downloadModal').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>

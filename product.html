@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibratory Bowl Feeder & Produk Otomasi | PT SETA Technology Asia</title>
+  <meta name="description" content="Spesifikasi teknis Vibratory Bowl Feeder, Drive Unit, Digital Control Box, Linear Track Feeder, dan Komponen Orientasi Part dari PT SETA Technology Asia.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Inter"', 'sans-serif'],
+            heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            corporate: {
+              50: '#F8FAFC', 100: '#F1F5F9', 200: '#E2E8F0', 300: '#CBD5E1',
+              400: '#94A3B8', 500: '#64748B', 600: '#475569', 700: '#334155',
+              800: '#1E293B', 900: '#0F172A', 950: '#0A192F',
+            },
+            seta: {
+              primary: '#0052CC', dark: '#0747A6', light: '#0284C7',
+              accent: '#EA580C', soft: '#EFF6FF', border: '#E2E8F0',
+            }
+          },
+          boxShadow: {
+            'corporate': '0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04)',
+            'corporate-hover': '0 12px 30px -4px rgba(0, 82, 204, 0.12), 0 4px 10px -2px rgba(15, 23, 42, 0.06)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-corporate-900 antialiased selection:bg-seta-primary selection:text-white flex flex-col min-h-screen">
+
+  <!-- TOP BAR -->
+  <header class="bg-corporate-950 text-white text-xs py-2 px-4 sm:px-8 border-b border-corporate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-6 text-corporate-300">
+        <span class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          Industrial Feeding & Optical Sorting Center • ISO 9001 Compliant
+        </span>
+        <span class="hidden md:inline text-corporate-600">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-corporate-400">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-seta-light"></i> Grand Slipi Tower Lt. 9, Jakarta Barat
+        </span>
+      </div>
+      <div class="flex items-center space-x-5 text-corporate-300">
+        <a href="tel:+6282213928230" class="flex items-center gap-1.5 hover:text-white transition">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-seta-light"></i>
+          <span>Sales Hotline: <strong class="text-white font-mono">+62 822 1392 8230</strong></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-corporate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3.5 group">
+        <div class="w-11 h-11 rounded-lg bg-corporate-950 flex items-center justify-center text-white font-extrabold text-xl tracking-wider shadow-md">
+          <span class="text-seta-light">S</span>T
+        </div>
+        <div>
+          <div class="text-xl font-extrabold tracking-tight text-corporate-950 font-heading leading-tight group-hover:text-seta-primary transition">
+            SETA <span class="text-seta-primary">TECHNOLOGY</span>
+          </div>
+          <div class="text-[10px] tracking-widest text-corporate-500 font-mono font-semibold uppercase">
+            Asia • Industrial Automation
+          </div>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-corporate-700">
+        <a href="index.html" class="hover:text-seta-primary transition">Home</a>
+        
+        <!-- PRODUCT DROPDOWN -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-seta-primary font-bold py-2">
+            <span>Produk & Mesin</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-seta-primary"></i>
+          </button>
+          <div class="absolute left-0 top-full hidden group-hover:block w-72 bg-white rounded-xl border border-corporate-200 shadow-corporate p-3 space-y-1">
+            <a href="product.html" class="block p-2.5 rounded-lg bg-corporate-50 text-seta-primary font-bold transition">
+              <div class="text-xs">Vibratory Bowl Feeder</div>
+              <div class="text-[11px] text-corporate-500 font-normal">Sistem orientasi part presisi tinggi</div>
+            </a>
+            <a href="product-automatic-sorting-machine.html" class="block p-2.5 rounded-lg hover:bg-corporate-50 transition">
+              <div class="font-bold text-xs text-corporate-900">Automatic Sorting Machine</div>
+              <div class="text-[11px] text-corporate-500">AI Optical 2D/3D Vision (PSG Series)</div>
+            </a>
+            <a href="product-sorting-house.html" class="block p-2.5 rounded-lg hover:bg-corporate-50 transition">
+              <div class="font-bold text-xs text-corporate-900">Integrated Sorting House</div>
+              <div class="text-[11px] text-corporate-500">Enclosure akustik & cell otomatis</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="hover:text-seta-primary transition">Tentang Kami</a>
+        <a href="download.html" class="hover:text-seta-primary transition">Katalog & Download</a>
+        <a href="contact.html" class="hover:text-seta-primary transition">Kontak</a>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <a href="contact.html#configurator" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-seta-primary hover:bg-seta-dark text-white text-sm font-bold shadow-md transition">
+          Minta Penawaran (RFQ)
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SUB-NAV FOR PRODUCT SUITE -->
+  <div class="bg-corporate-100 border-b border-corporate-200 py-3 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex items-center space-x-6 text-xs font-semibold overflow-x-auto">
+      <span class="text-corporate-500 uppercase font-mono text-[10px]">Kategori Produk:</span>
+      <a href="product.html" class="text-seta-primary bg-white px-3 py-1 rounded-full border border-blue-200 shadow-sm">Vibratory Bowl Feeder</a>
+      <a href="product-automatic-sorting-machine.html" class="text-corporate-600 hover:text-seta-primary transition">Automatic Sorting Machine</a>
+      <a href="product-sorting-house.html" class="text-corporate-600 hover:text-seta-primary transition">Integrated Sorting House</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="py-16 bg-white border-b border-corporate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7">
+          <span class="text-xs font-bold font-mono tracking-widest text-seta-primary uppercase">Precision Part Feeding</span>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-corporate-950 font-heading mt-2 leading-tight">
+            Vibratory Bowl Feeders & Linear Systems
+          </h1>
+          <p class="text-corporate-600 text-sm sm:text-base mt-4 leading-relaxed">
+            Mesin khusus dalam otomasi industri yang berfungsi menampung, memilah, dan mengorientasikan part atau komponen dalam kecepatan konstan menuju mesin perakitan otomatis berikutnya.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="contact.html#configurator" class="px-6 py-3 rounded-lg bg-seta-primary hover:bg-seta-dark text-white font-bold text-xs shadow-md transition">
+              Konsultasi Sampel Part & RFQ
+            </a>
+            <a href="download.html" class="px-6 py-3 rounded-lg border border-corporate-300 bg-white hover:bg-corporate-50 text-corporate-800 font-bold text-xs transition">
+              Download Spesifikasi PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="p-6 rounded-2xl bg-corporate-50 border border-corporate-200 shadow-corporate flex items-center justify-center">
+            <img src="assets/bowl-feeder.png" alt="Bowl Feeder System" class="max-h-72 object-contain">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 CORE PARTS OF A BOWL FEEDER -->
+  <section class="py-20 bg-corporate-50 border-b border-corporate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold font-mono tracking-widest text-seta-primary uppercase">Anatomi & Komponen Mesin</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-corporate-950 font-heading mt-2">
+          6 Elemen Rekayasa Vibratory Bowl Feeder
+        </h2>
+        <p class="text-corporate-600 text-sm mt-3">
+          Setiap subsistem dirancang dengan presisi mekanikal tinggi untuk memastikan aliran komponen stabil tanpa hambatan (*jam-free*).
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- PART 1 -->
+        <div class="p-6 rounded-xl bg-white border border-corporate-200 shadow-corporate">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-seta-primary font-mono font-bold text-sm mb-4">
+            01
+          </div>
+          <h3 class="text-lg font-bold text-corporate-950 font-heading">Bowl Top (Mangkuk Getar)</h3>
+          <p class="text-xs text-corporate-600 mt-2 leading-relaxed">
+            Wadah utama berbahan baja tahan karat SUS304/SUS316L dengan jalur spiral bertingkat (*spiral track*) yang dirancang khusus sesuai geometri part agar berputar dan naik ke atas secara alami.
+          </p>
+        </div>
+
+        <!-- PART 2 -->
+        <div class="p-6 rounded-xl bg-white border border-corporate-200 shadow-corporate">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-seta-primary font-mono font-bold text-sm mb-4">
+            02
+          </div>
+          <h3 class="text-lg font-bold text-corporate-950 font-heading">Drive Unit (Unit Penggerak)</h3>
+          <p class="text-xs text-corporate-600 mt-2 leading-relaxed">
+            Unit elektromagnetik dan pegas daun (*leaf springs*) presisi yang mengubah arus listrik menjadi getaran mikro frekuensi tinggi untuk menggerakkan part secara halus.
+          </p>
+        </div>
+
+        <!-- PART 3 -->
+        <div class="p-6 rounded-xl bg-white border border-corporate-200 shadow-corporate">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-seta-primary font-mono font-bold text-sm mb-4">
+            03
+          </div>
+          <h3 class="text-lg font-bold text-corporate-950 font-heading">Digital Control Box</h3>
+          <p class="text-xs text-corporate-600 mt-2 leading-relaxed">
+            Pengontrol frekuensi dan voltase digital cerdas dengan penyesuaian otomatis terhadap fluktuasi beban, dilengkapi port komunikasi interlock PLC.
+          </p>
+        </div>
+
+        <!-- PART 4 -->
+        <div class="p-6 rounded-xl bg-white border border-corporate-200 shadow-corporate">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-seta-primary font-mono font-bold text-sm mb-4">
+            04
+          </div>
+          <h3 class="text-lg font-bold text-corporate-950 font-heading">Bulk Storage Hopper</h3>
+          <p class="text-xs text-corporate-600 mt-2 leading-relaxed">
+            Wadah penampung part berkapasitas besar (5L - 50L) dengan sensor level fotolistrik yang mengisi mangkuk getar secara otomatis saat kuantitas part menipis.
+          </p>
+        </div>
+
+        <!-- PART 5 -->
+        <div class="p-6 rounded-xl bg-white border border-corporate-200 shadow-corporate">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-seta-primary font-mono font-bold text-sm mb-4">
+            05
+          </div>
+          <h3 class="text-lg font-bold text-corporate-950 font-heading">Linear Track Feeder</h3>
+          <p class="text-xs text-corporate-600 mt-2 leading-relaxed">
+            Jalur transfer linier bergetar yang menyalurkan part dari output mangkuk ke stasiun perakitan, menjaga orientasi part tetap presisi dalam antrean berkecepatan tinggi.
+          </p>
+        </div>
+
+        <!-- PART 6 -->
+        <div class="p-6 rounded-xl bg-white border border-corporate-200 shadow-corporate">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-seta-primary font-mono font-bold text-sm mb-4">
+            06
+          </div>
+          <h3 class="text-lg font-bold text-corporate-950 font-heading">Escapements & Nests</h3>
+          <p class="text-xs text-corporate-600 mt-2 leading-relaxed">
+            Mekanisme pneumatik di ujung track linier untuk memisahkan dan memposisikan satu per satu part agar siap diambil oleh robot *pick-and-place*.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TECHNICAL SPECIFICATION TABLE -->
+  <section class="py-20 bg-white border-b border-corporate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold font-mono tracking-widest text-seta-primary uppercase">Tabel Parameter Rekayasa</span>
+        <h2 class="text-3xl font-extrabold text-corporate-950 font-heading mt-1">
+          Spesifikasi Standar Model Seri ST-BF
+        </h2>
+      </div>
+
+      <div class="overflow-x-auto rounded-2xl border border-corporate-200 shadow-sm">
+        <table class="w-full text-xs text-left font-mono">
+          <thead class="bg-corporate-950 text-white uppercase text-[11px]">
+            <tr>
+              <th class="p-4">Model Seri</th>
+              <th class="p-4">Diameter Mangkuk</th>
+              <th class="p-4">Kapasitas Part (Max)</th>
+              <th class="p-4">Kecepatan Output</th>
+              <th class="p-4">Daya Listrik</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-corporate-200 text-corporate-800">
+            <tr class="hover:bg-corporate-50">
+              <td class="p-4 font-bold text-seta-primary">ST-BF150</td>
+              <td class="p-4">Ø 150 mm</td>
+              <td class="p-4">Part Mikro (< 5 mm)</td>
+              <td class="p-4">Hingga 600 PPM</td>
+              <td class="p-4">220V / 50W</td>
+            </tr>
+            <tr class="hover:bg-corporate-50">
+              <td class="p-4 font-bold text-seta-primary">ST-BF300</td>
+              <td class="p-4">Ø 300 mm</td>
+              <td class="p-4">Baut/Pin (5 - 25 mm)</td>
+              <td class="p-4">Hingga 450 PPM</td>
+              <td class="p-4">220V / 120W</td>
+            </tr>
+            <tr class="hover:bg-corporate-50">
+              <td class="p-4 font-bold text-seta-primary">ST-BF500</td>
+              <td class="p-4">Ø 500 mm</td>
+              <td class="p-4">Komponen Otomotif (25 - 60 mm)</td>
+              <td class="p-4">Hingga 300 PPM</td>
+              <td class="p-4">220V / 250W</td>
+            </tr>
+            <tr class="hover:bg-corporate-50">
+              <td class="p-4 font-bold text-seta-primary">ST-BF800</td>
+              <td class="p-4">Ø 800 mm</td>
+              <td class="p-4">Heavy Stamping Part (> 60 mm)</td>
+              <td class="p-4">Hingga 180 PPM</td>
+              <td class="p-4">220V / 450W</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-20 bg-corporate-50 border-b border-corporate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold font-mono tracking-widest text-seta-primary uppercase">Pertanyaan Umum</span>
+        <h2 class="text-3xl font-extrabold text-corporate-950 font-heading mt-1">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="space-y-4 text-sm">
+        
+        <div class="p-6 bg-white rounded-xl border border-corporate-200 shadow-sm">
+          <h4 class="font-bold text-corporate-950">Apa itu Vibratory Bowl Feeder?</h4>
+          <p class="text-xs text-corporate-600 mt-2 leading-relaxed">
+            Vibratory Bowl Feeder adalah perangkat otomasi industri yang menggunakan getaran mikro elektromagnetik untuk menyortir, memposisikan, dan menyalurkan komponen secara teratur ke stasiun perakitan berikutnya.
+          </p>
+        </div>
+
+        <div class="p-6 bg-white rounded-xl border border-corporate-200 shadow-sm">
+          <h4 class="font-bold text-corporate-950">Bagaimana proses penentuan desain track mangkuk?</h4>
+          <p class="text-xs text-corporate-600 mt-2 leading-relaxed">
+            Tim engineer kami menganalisis sampel fisik part Anda menggunakan pemodelan 3D CAD untuk menciptakan konfigurasi *tooling* (wipe blade, orientation track, air jet) yang memastikan hanya part dengan orientasi benar yang keluar ke stasiun kerja.
+          </p>
+        </div>
+
+        <div class="p-6 bg-white rounded-xl border border-corporate-200 shadow-sm">
+          <h4 class="font-bold text-corporate-950">Apakah SETA menyediakan peredam suara (soundproofing)?</h4>
+          <p class="text-xs text-corporate-600 mt-2 leading-relaxed">
+            Ya. Kami menyediakan penutup akrilik (*sound enclosure*) kedap suara dan lapisan poliuretan anti-aus pada dinding mangkuk yang terbukti meredam kebisingan hingga di bawah 70 dB(A).
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-corporate-950 text-white border-t border-corporate-800 pt-16 pb-12 text-xs mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="w-8 h-8 rounded bg-seta-primary flex items-center justify-center font-bold text-white">ST</div>
+          <span class="text-base font-extrabold tracking-tight font-heading">PT SETA TECHNOLOGY ASIA</span>
+        </div>
+        <p class="text-corporate-400 text-xs leading-relaxed max-w-sm">
+          Penyedia terkemuka mesin Vibratory Bowl Feeder, Automatic Sorting System, dan solusi rekayasa otomasi pabrik berstandar presisi internasional di Indonesia.
+        </p>
+      </div>
+
+      <div>
+        <h5 class="font-bold text-corporate-200 uppercase font-mono tracking-wider mb-3">Navigasi Produk</h5>
+        <ul class="space-y-2 text-corporate-400">
+          <li><a href="product.html" class="hover:text-white transition">Vibratory Bowl Feeder</a></li>
+          <li><a href="product-automatic-sorting-machine.html" class="hover:text-white transition">Automatic Sorting Machine</a></li>
+          <li><a href="product-sorting-house.html" class="hover:text-white transition">Integrated Sorting House</a></li>
+          <li><a href="download.html" class="hover:text-white transition">Download Katalog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="font-bold text-corporate-200 uppercase font-mono tracking-wider mb-3">Kontak Penjualan</h5>
+        <p class="text-corporate-400">Hotline: +62 822 1392 8230</p>
+        <p class="text-corporate-400 mt-1">Email: raden@seta.co.id</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 mt-12 pt-6 border-t border-corporate-800 text-center text-corporate-500">
+      © 2026 PT SETA Technology Asia. Hak Cipta Dilindungi Undang-Undang.
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
