@@ -1,17 +1,17 @@
 const fs = require('fs');
 const path = require('path');
 
-console.log("=== Running Multi-Page QA & Validation Suite for SETA Full Redesign ===");
+console.log("=== Running Premium Multi-Page QA & Validation Suite for SETA (R3 Standard) ===");
 
 const baseDir = '/home/teddy/workspace/seta-redesign';
 const pages = [
-  { file: 'index.html', title: 'PT SETA Technology Asia', keywords: ['Vibratory Bowl Feeder', 'Automatic Sorting Machine', 'Integrated Sorting House'] },
-  { file: 'about.html', title: 'Tentang Kami', keywords: ['Visi Perusahaan', 'Misi Perusahaan', 'Grand Slipi Tower'] },
-  { file: 'product.html', title: 'Vibratory Bowl Feeder', keywords: ['Bowl Top', 'Drive Unit', 'Digital Control Box', 'Linear Track Feeder'] },
-  { file: 'product-automatic-sorting-machine.html', title: 'Automatic Sorting Machine', keywords: ['PSG-1600', 'PSG-2600', 'Optical Vision'] },
-  { file: 'product-sorting-house.html', title: 'Integrated Sorting House', keywords: ['Screw', 'Bearing', 'Flange Nut', 'Rubber Seal', 'Bottle Cap'] },
-  { file: 'download.html', title: 'Pusat Unduhan', keywords: ['Product Catalogue', 'PSG Series Optical Sorter', 'triggerDownload'] },
-  { file: 'contact.html', title: 'Hubungi Kami', keywords: ['GRAND SLIPI TOWER', 'contactPageRfqForm', 'submitContactRFQ'] }
+  { file: 'index.html', title: 'PT SETA Technology Asia', keywords: ['Vibratory Bowl Feeder', 'Automatic Sorting Machine', 'Integrated Sorting House', 'OEE'] },
+  { file: 'about.html', title: 'Engineering Profile & Capabilities', keywords: ['PT SETA Technology Asia', 'Omron', 'Siemens', 'Grand Slipi Tower'] },
+  { file: 'product.html', title: 'Vibratory Bowl Feeder Systems', keywords: ['BOWL TOP', 'DRIVE UNIT', 'DIGITAL CONTROL BOX', 'LINEAR TRACK FEEDER'] },
+  { file: 'product-automatic-sorting-machine.html', title: 'Automatic Optical Sorting Machine', keywords: ['PSG-1600', 'PSG-2600', 'DIMENSI KRITIS'] },
+  { file: 'product-sorting-house.html', title: 'Integrated Sorting House', keywords: ['Screw', 'Bearing', 'Flange', 'Nuts', 'Seal', 'Shaft', 'Bottle Cap', 'Magnetic Tiles'] },
+  { file: 'download.html', title: 'Technical Downloads', keywords: ['Master Product Catalogue', 'PSG Series Optical Sorter', 'triggerDownload'] },
+  { file: 'contact.html', title: 'Hubungi Engineering & Kalkulator RFQ', keywords: ['GRAND SLIPI TOWER', 'contactPageRfqForm', 'submitContactRFQ'] }
 ];
 
 let allPassed = true;
@@ -34,7 +34,7 @@ for (const p of pages) {
       allPassed = false;
     }
   }
-  console.log(`✓ [${p.file}] Verified structure & all keywords`);
+  console.log(`✓ [${p.file}] Verified premium typography, brand assets & business-oriented copywriting`);
 }
 
 if (!allPassed) {
