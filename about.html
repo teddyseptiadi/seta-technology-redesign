@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineering Profile & Capabilities | PT SETA Technology Asia</title>
-  <meta name="description" content="Profil rekayasa industri, visi manufaktur, fasilitas workshop, dan komitmen mutu PT SETA Technology Asia dalam memimpin pasar otomasi feeding di Indonesia.">
+  <title>Tentang Kami & Profil Rekayasa | PT SETA Technology Asia</title>
+  <meta name="description" content="Profil rekayasa industri, visi manufaktur, workshop fasilitas, dan komitmen mutu PT SETA Technology Asia dalam sistem feeding dan sortir otomatis di Indonesia.">
   
   <!-- Typography: Syne, IBM Plex Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,17 +24,19 @@
             mono: ['"JetBrains Mono"', 'monospace'],
           },
           colors: {
-            brand: {
-              black: '#06090F',
-              panel: '#0D121D',
-              panelHover: '#131A29',
-              border: '#1E293B',
+            industrial: {
+              950: '#070a11',
+              900: '#0b0f19',
+              850: '#101623',
+              800: '#161e30',
+              700: '#1f293d',
+              border: '#243048',
               borderLight: '#334155',
-              blue: '#0052CC',
-              blueHover: '#0066FF',
-              cyan: '#00E5FF',
-              amber: '#FF5500',
-              muted: '#94A3B8',
+              accent: '#f59e0b',
+              accentHover: '#d97706',
+              blue: '#2563eb',
+              blueHover: '#1d4ed8',
+              muted: '#94a3b8',
             }
           }
         }
@@ -43,328 +45,274 @@
   </script>
   <style>
     body {
-      background-color: #06090F;
-      color: #F8FAFC;
+      background-color: #070a11;
+      color: #f8fafc;
       font-family: 'IBM Plex Sans', sans-serif;
     }
-    .tabular-nums {
-      font-variant-numeric: tabular-nums;
-    }
-    ::-webkit-scrollbar {
-      width: 6px;
-      height: 6px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #06090F;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #1E293B;
-      border-radius: 3px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #334155;
-    }
+    .tabular-nums { font-variant-numeric: tabular-nums; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #070a11; }
+    ::-webkit-scrollbar-thumb { background: #243048; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #334155; }
   </style>
 </head>
-<body class="bg-brand-black text-slate-100 antialiased selection:bg-brand-cyan selection:text-brand-black flex flex-col min-h-screen">
+<body class="bg-industrial-950 text-slate-100 antialiased flex flex-col min-h-screen selection:bg-industrial-accent selection:text-industrial-950">
 
-  <!-- TOP INDUSTRIAL TELEMETRY BAR -->
-  <div class="border-b border-brand-border bg-brand-black text-xs py-2 px-4 sm:px-8">
+  <!-- TOP HEADER -->
+  <div class="border-b border-industrial-border bg-industrial-900 text-xs py-2.5 px-4 sm:px-8">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 font-mono text-[11px]">
       <div class="flex items-center space-x-4 text-slate-400">
-        <span class="flex items-center gap-2 text-slate-300">
-          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-          SYS-STATUS: FACTORY AUTOMATION DEPLOYMENT READY
+        <span class="flex items-center gap-2 text-slate-200">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          PT SETA TECHNOLOGY ASIA • PROFIL REKAYASA & FASILITAS
         </span>
-        <span class="hidden md:inline text-slate-700">/</span>
-        <span class="hidden md:inline text-slate-400">JAKARTA HQ: Grand Slipi Tower Lt. 9</span>
+        <span class="hidden md:inline text-slate-700">|</span>
+        <span class="hidden md:inline text-slate-400">Grand Slipi Tower Lt. 9, Jakarta Barat</span>
       </div>
       <div class="flex items-center space-x-6 text-slate-300">
-        <a href="tel:+6282213928230" class="hover:text-brand-cyan transition flex items-center gap-1.5">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-cyan"></i>
-          <span>Direct Hotline: <strong class="text-white font-semibold">+62 822 1392 8230</strong></span>
+        <a href="tel:+6282213928230" class="hover:text-industrial-accent transition flex items-center gap-1.5">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-industrial-accent"></i>
+          <span>Hotline: <strong class="text-white font-semibold">+62 822 1392 8230</strong></span>
         </a>
-        <span class="text-slate-700">/</span>
-        <a href="mailto:raden@seta.co.id" class="hover:text-brand-cyan transition">raden@seta.co.id</a>
       </div>
     </div>
   </div>
 
   <!-- NAVIGATION -->
-  <nav class="sticky top-0 z-50 bg-brand-black/95 backdrop-blur border-b border-brand-border">
+  <nav class="sticky top-0 z-50 bg-industrial-900/95 backdrop-blur border-b border-industrial-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
       
-      <!-- BRAND LOGO -->
+      <!-- LOGO -->
       <a href="index.html" class="flex items-center space-x-3.5 group">
-        <div class="w-10 h-10 rounded bg-brand-blue flex items-center justify-center font-display font-extrabold text-white text-lg tracking-wider border border-brand-blueHover">
+        <div class="w-10 h-10 rounded bg-industrial-blue flex items-center justify-center font-display font-extrabold text-white text-lg tracking-wider border border-industrial-blueHover shadow-md">
           ST
         </div>
         <div>
-          <div class="text-lg font-bold tracking-tight text-white font-display group-hover:text-brand-cyan transition">
-            SETA <span class="text-brand-cyan">TECHNOLOGY</span>
+          <div class="text-lg font-bold tracking-tight text-white font-display group-hover:text-industrial-accent transition">
+            SETA <span class="text-slate-300">TECHNOLOGY</span>
           </div>
           <div class="text-[10px] tracking-widest text-slate-400 font-mono -mt-0.5 font-semibold uppercase">
-            Asia • Industrial Automation
+            Asia • Feeding & Sorting Machinery
           </div>
         </div>
       </a>
 
-      <!-- NAV ITEMS (DESKTOP) -->
+      <!-- DESKTOP NAV -->
       <div class="hidden lg:flex items-center space-x-8 text-xs font-mono font-bold uppercase tracking-wider">
-        <a href="index.html" class="text-slate-300 hover:text-brand-cyan transition pb-1">Home</a>
+        <a href="index.html" class="text-slate-300 hover:text-industrial-accent transition pb-1">Home</a>
         
         <!-- PRODUCTS DROPDOWN -->
         <div class="relative group">
-          <button class="flex items-center gap-1 text-slate-300 hover:text-brand-cyan transition py-2">
-            <span>Machinery & Systems</span>
+          <button class="flex items-center gap-1 text-slate-300 hover:text-industrial-accent transition py-2">
+            <span>Mesin & Sistem</span>
             <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-500 group-hover:rotate-180 transition"></i>
           </button>
-          <div class="absolute left-0 top-full hidden group-hover:block w-80 bg-brand-panel rounded-lg border border-brand-border shadow-2xl p-2 space-y-1">
-            <a href="product.html" class="block p-3 rounded hover:bg-brand-panelHover border border-transparent hover:border-brand-border transition">
-              <div class="font-bold text-xs text-white">Vibratory Bowl Feeder</div>
-              <div class="text-[11px] text-slate-400 font-sans mt-0.5 font-normal">Sistem orientasi part otomatis hingga 600 PPM</div>
+          
+          <div class="absolute left-0 top-full mt-1 w-72 bg-industrial-900 border border-industrial-border rounded-xl shadow-2xl p-2 hidden group-hover:block z-50 backdrop-blur-xl">
+            <a href="product.html" class="block p-3 rounded-lg hover:bg-industrial-800 transition">
+              <div class="text-white font-sans font-semibold text-sm">Vibratory Bowl Feeder</div>
+              <div class="text-[11px] font-sans text-slate-400 mt-0.5">Sistem orientasi part otomatis hingga 600 PPM</div>
             </a>
-            <a href="product-automatic-sorting-machine.html" class="block p-3 rounded hover:bg-brand-panelHover border border-transparent hover:border-brand-border transition">
-              <div class="font-bold text-xs text-white">Automatic Sorting Machine</div>
-              <div class="text-[11px] text-slate-400 font-sans mt-0.5 font-normal">Inspeksi AI Optical 2D/3D (PSG Series)</div>
+            <a href="product-automatic-sorting-machine.html" class="block p-3 rounded-lg hover:bg-industrial-800 transition border-t border-industrial-border/50">
+              <div class="text-white font-sans font-semibold text-sm">Optical Sorting Machine</div>
+              <div class="text-[11px] font-sans text-slate-400 mt-0.5">Inspeksi visual multi-kamera akurasi ±0.01 mm</div>
             </a>
-            <a href="product-sorting-house.html" class="block p-3 rounded hover:bg-brand-panelHover border border-transparent hover:border-brand-border transition">
-              <div class="font-bold text-xs text-white">Integrated Sorting House</div>
-              <div class="text-[11px] text-slate-400 font-sans mt-0.5 font-normal">Cell peredam suara &lt; 70 dB(A) & packaging line</div>
+            <a href="product-sorting-house.html" class="block p-3 rounded-lg hover:bg-industrial-800 transition border-t border-industrial-border/50">
+              <div class="text-white font-sans font-semibold text-sm">Integrated Sorting House</div>
+              <div class="text-[11px] font-sans text-slate-400 mt-0.5">Stasiun perakitan terisolasi peredam suara &lt; 70 dBA</div>
             </a>
           </div>
         </div>
 
-        <a href="about.html" class="text-brand-cyan transition border-b-2 border-brand-cyan pb-1">Engineering & Profile</a>
-        <a href="download.html" class="text-slate-300 hover:text-brand-cyan transition pb-1">Downloads</a>
-        <a href="contact.html" class="text-slate-300 hover:text-brand-cyan transition pb-1">Contact</a>
+        <a href="about.html" class="text-industrial-accent border-b-2 border-industrial-accent pb-1">Tentang Kami</a>
+        <a href="download.html" class="text-slate-300 hover:text-industrial-accent transition pb-1">Katalog & CAD</a>
+        <a href="contact.html" class="text-slate-300 hover:text-industrial-accent transition pb-1">Kontak & RFQ</a>
       </div>
 
-      <!-- CTA BUTTON & MOBILE TOGGLE -->
-      <div class="flex items-center space-x-4">
-        <a href="contact.html#configurator" class="hidden sm:flex px-5 py-2.5 rounded bg-brand-blue hover:bg-brand-blueHover text-white text-xs font-mono font-bold uppercase tracking-wider transition items-center gap-2 border border-blue-400/30">
-          <i data-lucide="calculator" class="w-4 h-4 text-brand-cyan"></i>
-          <span>Kalkulator RFQ</span>
+      <!-- CTA BUTTON -->
+      <div class="hidden sm:flex items-center space-x-4">
+        <a href="contact.html" class="px-5 py-2.5 rounded-lg bg-industrial-accent hover:bg-industrial-accentHover text-industrial-950 font-bold text-xs font-mono uppercase tracking-wider transition shadow-lg flex items-center gap-2">
+          <span>Minta Penawaran (RFQ)</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
+      </div>
 
-        <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-300 hover:text-white border border-brand-border rounded bg-brand-panel" aria-label="Toggle Menu">
-          <i data-lucide="menu" class="w-5 h-5"></i>
+      <!-- MOBILE MENU BUTTON -->
+      <div class="lg:hidden flex items-center">
+        <button id="mobile-menu-btn" class="p-2 text-slate-400 hover:text-white focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
+
     </div>
 
     <!-- MOBILE MENU DRAWER -->
-    <div id="mobileMenu" class="hidden lg:hidden border-t border-brand-border bg-brand-panel px-4 py-6 space-y-4 text-sm font-mono uppercase">
-      <a href="index.html" class="block text-slate-300 hover:text-brand-cyan py-1">Home</a>
-      <div class="space-y-2 pl-3 border-l border-brand-border">
-        <div class="text-[11px] text-slate-400 font-semibold tracking-wider">Machinery & Systems</div>
-        <a href="product.html" class="block text-slate-300 hover:text-brand-cyan text-xs py-1">Vibratory Bowl Feeder</a>
-        <a href="product-automatic-sorting-machine.html" class="block text-slate-300 hover:text-brand-cyan text-xs py-1">Automatic Sorting Machine</a>
-        <a href="product-sorting-house.html" class="block text-slate-300 hover:text-brand-cyan text-xs py-1">Integrated Sorting House</a>
-      </div>
-      <a href="about.html" class="block text-brand-cyan font-bold py-1">Engineering & Profile</a>
-      <a href="download.html" class="block text-slate-300 hover:text-brand-cyan py-1">Downloads</a>
-      <a href="contact.html" class="block text-slate-300 hover:text-brand-cyan py-1">Contact</a>
-      <div class="pt-2">
-        <a href="contact.html#configurator" class="block w-full text-center px-4 py-3 rounded bg-brand-blue text-white text-xs font-bold">
-          Kalkulator RFQ
-        </a>
-      </div>
+    <div id="mobile-menu" class="lg:hidden hidden border-b border-industrial-border bg-industrial-900 px-6 py-4 space-y-3 font-mono text-sm">
+      <a href="index.html" class="block text-slate-300 hover:text-white py-2">Home</a>
+      <a href="product.html" class="block text-slate-300 hover:text-white py-1">Vibratory Bowl Feeder</a>
+      <a href="product-automatic-sorting-machine.html" class="block text-slate-300 hover:text-white py-1">Optical Sorting Machine</a>
+      <a href="product-sorting-house.html" class="block text-slate-300 hover:text-white py-1">Integrated Sorting House</a>
+      <a href="about.html" class="block text-industrial-accent py-2 font-bold">Tentang Kami</a>
+      <a href="download.html" class="block text-slate-300 hover:text-white py-2">Katalog & CAD</a>
+      <a href="contact.html" class="block text-slate-300 hover:text-white py-2">Kontak & RFQ</a>
     </div>
   </nav>
 
   <!-- PAGE HERO -->
-  <section class="py-20 bg-brand-panel/30 border-b border-brand-border">
+  <section class="py-16 bg-industrial-900 border-b border-industrial-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="max-w-3xl">
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-white font-display tracking-tight leading-tight">
-          Pabrikasi Otomasi Feeding & Inspeksi Optik Presisi
+      <div class="max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-industrial-800 border border-industrial-border text-xs font-mono text-industrial-accent font-semibold">
+          PROFIL PERUSAHAAN & STANDAR KUALITAS
+        </div>
+        <h1 class="font-display text-4xl sm:text-5xl font-bold text-white tracking-tight">
+          Presisi Rekayasa Manufaktur untuk Industri Otomasi Modern.
         </h1>
-        <p class="text-slate-300 text-base sm:text-lg mt-4 leading-relaxed font-normal">
-          PT SETA Technology Asia adalah manufaktur sistem Vibratory Bowl Feeder dan Automatic Optical Sorter kustom di Indonesia. Kami merekayasa solusi transfer part mekanik dan inspeksi kamera untuk memastikan lini perakitan bekerja pada kapasitas maksimum tanpa macet.
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
+          PT SETA Technology Asia didirikan dengan fokus tunggal: mengatasi kendala terberat dalam lini perakitan cepat melalui rekayasa mangkuk getar (*vibratory bowl feeder*) kustom dan inspeksi visual otomatis berstandar internasional.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- PROFILE STORY & PRODUCTION CAPABILITY -->
-  <section class="py-20 bg-brand-black border-b border-brand-border">
+  <!-- ENGINEERING VALUES -->
+  <section class="py-20 bg-industrial-950 border-b border-industrial-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
       
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
-        <div class="lg:col-span-6">
-          <div class="rounded-xl overflow-hidden border border-brand-border bg-brand-panel p-3">
-            <img src="assets/aboutUs.png" alt="Engineering Facility SETA" class="w-full h-auto rounded-lg object-cover">
-          </div>
-        </div>
-
-        <div class="lg:col-span-6 space-y-6 text-sm text-slate-300 leading-relaxed">
-          <div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-white font-display">
-              Fokus Rekayasa: Menghilangkan Hambatan Lini Perakitan
-            </h2>
-          </div>
-
-          <p>
-            Komponen macet di jalur conveyor dan part cacat yang terpasang pada tahap perakitan akhir adalah pemborosan biaya terbesar di lantai pabrik. <strong>PT SETA Technology Asia</strong> mengatasi masalah ini dengan pendekatan rekayasa spesifik: menganalisis sifat fisik part, koefisien gesek, titik berat, dan kecepatan siklus yang dibutuhkan lini produksi Anda.
-          </p>
-
-          <p>
-            Dengan lini mesin mencakup <em>Vibratory Bowl Feeder</em>, <em>Centrifugal Feeder</em>, <em>Track Linier</em>, dan <em>PSG Optical Sorter</em>, seluruh unit dipabrikasi menggunakan bahan SUS304/SUS316L dan dilengkapi kontroler getaran berfrekuensi variabel.
-          </p>
-
-          <div class="p-4 rounded-lg bg-brand-panel border border-brand-border font-mono text-xs text-slate-300 space-y-1.5">
-            <div class="text-brand-cyan font-bold mb-1 uppercase tracking-wider">FAKTA REKAM JEJAK & KOMPATIBILITAS:</div>
-            <div>• 1.000+ unit mesin beroperasi aktif di plant manufaktur otomotif, elektronik, dan farmasi.</div>
-            <div>• Integrasi kontroler I/O dengan PLC industri standar (<strong class="text-white">Omron</strong>, <strong class="text-white">Siemens</strong>, Mitsubishi).</div>
-            <div>• Dukungan teknisi lapangan langsung dari kantor Jakarta Barat dan jaringan mitra lokal.</div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 4 ENGINEERING CORE PILLARS -->
-  <section class="py-20 bg-brand-panel/30 border-b border-brand-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      
-      <div class="mb-12">
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-display">
-          4 Pilar Standar Mutu SETA
-        </h2>
-        <p class="text-slate-400 text-sm mt-2">
-          Setiap unit mesin melalui pengujian ketat sebelum dikirim ke fasilitas pabrik pelanggan.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <div class="p-6 rounded-lg bg-brand-panel border border-brand-border">
-          <i data-lucide="crosshair" class="w-6 h-6 text-brand-cyan mb-4"></i>
-          <h4 class="font-bold text-white text-base font-display">Pabrikasi CNC Presisi (±0.05 mm)</h4>
-          <p class="text-xs text-slate-400 mt-2 leading-relaxed font-sans">
-            Jalur mangkuk SUS304 dikerjakan dengan mesin CNC presisi untuk memastikan pemisahan orientasi part berjalan akurat.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-lg bg-brand-panel border border-brand-border">
-          <i data-lucide="cpu" class="w-6 h-6 text-brand-cyan mb-4"></i>
-          <h4 class="font-bold text-white text-base font-display">Inspeksi Kamera Telecentric</h4>
-          <p class="text-xs text-slate-400 mt-2 leading-relaxed font-sans">
-            Kamera optik berkecepatan tinggi memeriksa 100% dimensi part, drat, dan cacat fisik sebelum masuk ke feeder perakitan.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-lg bg-brand-panel border border-brand-border">
-          <i data-lucide="shield-check" class="w-6 h-6 text-brand-cyan mb-4"></i>
-          <h4 class="font-bold text-white text-base font-display">Kepatuhan Standar CE & K3</h4>
-          <p class="text-xs text-slate-400 mt-2 leading-relaxed font-sans">
-            Enclosure peredam kebisingan &lt; 70 dB(A) dan interlock kelistrikan sesuai standar keselamatan kerja industri.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-lg bg-brand-panel border border-brand-border">
-          <i data-lucide="wrench" class="w-6 h-6 text-brand-cyan mb-4"></i>
-          <h4 class="font-bold text-white text-base font-display">Layanan Teknisi Lapangan 24/7</h4>
-          <p class="text-xs text-slate-400 mt-2 leading-relaxed font-sans">
-            Teknisi lokal siap melakukan setting kecepatan di lokasi, kalibrasi jalur feeding, dan penyediaan suku cadang cepat.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- MULTI-INDUSTRY RESILIENCE -->
-  <section class="py-20 bg-brand-black border-b border-brand-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
-        <div class="lg:col-span-6 space-y-6 text-sm text-slate-300 leading-relaxed">
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-white font-display">
-            Pengalaman Lintas Sektor Industri
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+        <div class="space-y-6">
+          <div class="text-xs font-mono font-bold text-industrial-accent uppercase tracking-wider">Komitmen Teknis</div>
+          <h2 class="font-display text-3xl font-bold text-white tracking-tight">
+            Dari Gambar Teknik CAD Sampai Integrasi di Lini Perakitan
           </h2>
-          <p>
-            Mesin buatan PT SETA telah digunakan di berbagai sektor: <strong>otomotif tier-1/tier-2, komponen semikonduktor, perangkat elektronik, kemasan farmasi steril, tutup botol F&B, dan manufaktur fastener</strong>.
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Setiap komponen memiliki karakteristik fisik unik: pusat gravitasi, koefisien gesek permukaan, dan toleransi dimensi. Kami tidak menjual mesin standar toko; setiap unit dirancang dan diuji secara khusus menggunakan simulasi 3D dan pengujian fisik dengan sampel part aktual dari pabrik Anda.
           </p>
-          <p>
-            Kami menyesuaikan spesifikasi mesin dengan kebutuhan spesifik lini Anda—mulai dari standar kebersihan SUS316L untuk cleanroom hingga peredam aus tebal untuk part stamping logam.
-          </p>
-          <div class="pt-2">
-            <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 rounded bg-brand-blue hover:bg-brand-blueHover text-white font-mono font-bold text-xs uppercase tracking-wider transition border border-blue-400/30">
-              <span>Konsultasikan Spesifikasi Lini Anda</span>
-              <i data-lucide="arrow-right" class="w-4 h-4 text-brand-cyan"></i>
-            </a>
+          <div class="space-y-3 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded bg-industrial-800 border border-industrial-border flex items-center justify-center text-emerald-400 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <strong class="text-white text-sm font-semibold">Uji Kelayakan Sampel Part 100%:</strong>
+                <p class="text-xs text-slate-400 mt-0.5">Validasi kestabilan orientasi dan throughput sebelum fabrikasi final dimulai.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded bg-industrial-800 border border-industrial-border flex items-center justify-center text-emerald-400 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <strong class="text-white text-sm font-semibold">Kompatibilitas Protokol PLC Industri:</strong>
+                <p class="text-xs text-slate-400 mt-0.5">Integrasi mulus dengan jaringan PLC Omron, Siemens, Mitsubishi, dan Beckhoff.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded bg-industrial-800 border border-industrial-border flex items-center justify-center text-emerald-400 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <strong class="text-white text-sm font-semibold">Dukungan Servis & Sparepart Lokal:</strong>
+                <p class="text-xs text-slate-400 mt-0.5">Teknisi servis berpengalaman siap melakukan *commissioning* dan *preventive maintenance* langsung di lokasi pabrik.</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="lg:col-span-6">
-          <div class="rounded-xl overflow-hidden border border-brand-border bg-brand-panel p-3">
-            <img src="assets/Image-OurValues.png" alt="Fasilitas Workshop SETA" class="w-full h-auto rounded-lg object-cover">
+        <div class="rounded-2xl bg-industrial-900 border border-industrial-border p-6 shadow-2xl space-y-6">
+          <div class="text-xs font-mono text-slate-400 pb-3 border-b border-industrial-border uppercase font-bold text-white">
+            Spesifikasi Standar Material & Komponen
+          </div>
+          <div class="grid grid-cols-2 gap-4 text-xs font-mono">
+            <div class="p-3.5 rounded-lg bg-industrial-850 border border-industrial-border">
+              <span class="text-slate-400">Material Bowl:</span>
+              <div class="text-white font-bold mt-1">SUS304 / Alum 6061-T6</div>
+            </div>
+            <div class="p-3.5 rounded-lg bg-industrial-850 border border-industrial-border">
+              <span class="text-slate-400">Surface Coating:</span>
+              <div class="text-white font-bold mt-1">PU / Teflon / Habasit</div>
+            </div>
+            <div class="p-3.5 rounded-lg bg-industrial-850 border border-industrial-border">
+              <span class="text-slate-400">Drive Coil:</span>
+              <div class="text-white font-bold mt-1">Dual/Triple Magnet 50Hz</div>
+            </div>
+            <div class="p-3.5 rounded-lg bg-industrial-850 border border-industrial-border">
+              <span class="text-slate-400">Noise Level:</span>
+              <div class="text-emerald-400 font-bold mt-1">&lt; 70 dB(A) Certified</div>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl bg-industrial-800/60 border border-industrial-border text-xs text-slate-300 leading-relaxed font-sans">
+            "Prioritas kami adalah memastikan mesin yang Anda pasang dapat beroperasi tanpa henti selama bertahun-tahun dengan tingkat keausan minimal dan pemeliharaan yang mudah."
           </div>
         </div>
-
       </div>
+
     </div>
   </section>
 
-  <!-- STANDARDIZED INDUSTRIAL FOOTER -->
-  <footer class="bg-brand-black text-white border-t border-brand-border pt-16 pb-12 text-xs mt-auto">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
-      
-      <div class="md:col-span-2">
-        <div class="flex items-center space-x-3 mb-4">
-          <div class="w-8 h-8 rounded bg-brand-blue flex items-center justify-center font-bold text-white font-display">ST</div>
-          <span class="text-base font-extrabold tracking-tight font-display">PT SETA TECHNOLOGY ASIA</span>
+  <!-- FOOTER -->
+  <footer class="bg-industrial-950 text-slate-400 text-xs py-14 mt-auto border-t border-industrial-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-industrial-border">
+        
+        <div class="md:col-span-4 space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 rounded bg-industrial-blue flex items-center justify-center font-display font-extrabold text-white text-base">
+              ST
+            </div>
+            <span class="font-display font-bold text-lg text-white">SETA TECHNOLOGY ASIA</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Spesialis perancangan dan manufaktur Vibratory Bowl Feeder kustom, Mesin Sortir Optik Otomatis, dan Sistem Otomasi Pabrik Presisi Tinggi di Indonesia.
+          </p>
         </div>
-        <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
-          Penyedia terkemuka sistem Vibratory Bowl Feeder, Mesin Sortir Optik AI, dan solusi otomatisasi lini perakitan manufaktur presisi tinggi di Indonesia.
-        </p>
-        <div class="mt-4 text-slate-400 font-mono text-[11px]">
-          <div>HQ: Gedung Grand Slipi Tower Lt. 9, Jakarta Barat 11480</div>
-          <div class="mt-1">Hotline: <strong class="text-brand-cyan">+62 822 1392 8230</strong> | Email: raden@seta.co.id</div>
+
+        <div class="md:col-span-3 space-y-3 font-mono">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Lini Produk</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="product.html" class="hover:text-industrial-accent transition">Vibratory Bowl Feeder</a></li>
+            <li><a href="product-automatic-sorting-machine.html" class="hover:text-industrial-accent transition">Automatic Sorting Machine</a></li>
+            <li><a href="product-sorting-house.html" class="hover:text-industrial-accent transition">Integrated Sorting House</a></li>
+          </ul>
         </div>
+
+        <div class="md:col-span-2 space-y-3 font-mono">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Perusahaan</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="about.html" class="text-industrial-accent font-bold">Tentang Kami</a></li>
+            <li><a href="download.html" class="hover:text-industrial-accent transition">Katalog & CAD</a></li>
+            <li><a href="contact.html" class="hover:text-industrial-accent transition">Kontak & RFQ</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <div class="text-xs font-mono font-bold text-white uppercase tracking-wider">Kantor Pusat Jakarta</div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Grand Slipi Tower Lt. 9 Unit O, Jl. Letjen S. Parman Kav. 22–24, Palmerah, Jakarta Barat 11480.
+          </p>
+          <div class="space-y-1 font-mono text-xs text-slate-300">
+            <div>Tel: <a href="tel:+6282213928230" class="text-white hover:text-industrial-accent font-semibold">+62 822 1392 8230</a></div>
+            <div>Email: <a href="mailto:raden@seta.co.id" class="text-white hover:text-industrial-accent font-semibold">raden@seta.co.id</a></div>
+          </div>
+        </div>
+
       </div>
 
-      <div>
-        <h5 class="font-bold text-slate-200 uppercase font-mono tracking-wider mb-3">Machinery Suite</h5>
-        <ul class="space-y-2 text-slate-400 font-mono text-xs">
-          <li><a href="product.html" class="hover:text-brand-cyan transition">Vibratory Bowl Feeder</a></li>
-          <li><a href="product-automatic-sorting-machine.html" class="hover:text-brand-cyan transition">Automatic Sorting Machine</a></li>
-          <li><a href="product-sorting-house.html" class="hover:text-brand-cyan transition">Integrated Sorting House</a></li>
-          <li><a href="download.html" class="hover:text-brand-cyan transition">Download Katalog Teknis</a></li>
-        </ul>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-[11px] font-mono text-slate-500 gap-2">
+        <div>&copy; 2026 PT SETA Technology Asia. All rights reserved.</div>
+        <div>Rekayasa Presisi • SAK EMKM & ISO Compliance</div>
       </div>
 
-      <div>
-        <h5 class="font-bold text-slate-200 uppercase font-mono tracking-wider mb-3">Direct Actions</h5>
-        <ul class="space-y-2 text-slate-400 font-mono text-xs">
-          <li><a href="about.html" class="hover:text-brand-cyan transition">Engineering & Profile</a></li>
-          <li><a href="contact.html#configurator" class="hover:text-brand-cyan transition">Kalkulator Kebutuhan RFQ</a></li>
-          <li><a href="contact.html" class="hover:text-brand-cyan transition">Hubungi Lead Engineer</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 mt-12 pt-6 border-t border-brand-border text-center text-slate-500 font-mono text-[11px]">
-      © 2026 PT SETA Technology Asia. Industrial Grade Engineering. All Rights Reserved.
     </div>
   </footer>
 
   <script>
     lucide.createIcons();
-
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (mobileMenuBtn && mobileMenu) {
-      mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
       });
     }
   </script>
