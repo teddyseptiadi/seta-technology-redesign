@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pusat Unduhan Brosur & Data Teknis CAD | PT SETA Technology Asia</title>
-  <meta name="description" content="Download katalog produk, datasheet spesifikasi teknis, dan formulir permintaan file 3D CAD STEP untuk integrasi perancangan mesin otomasi Anda.">
+  <meta name="description" content="Download katalog produk, datasheet spesifikasi teknis, dan formulir permintaan file 3D CAD STEP.">
   
-  <!-- Typography: Syne, IBM Plex Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -20,23 +19,23 @@
         extend: {
           fontFamily: {
             sans: ['"IBM Plex Sans"', 'sans-serif'],
-            display: ['"Syne"', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
           },
           colors: {
-            industrial: {
-              950: '#070a11',
-              900: '#0b0f19',
-              850: '#101623',
-              800: '#161e30',
-              700: '#1f293d',
-              border: '#243048',
-              borderLight: '#334155',
-              accent: '#f59e0b',
-              accentHover: '#d97706',
-              blue: '#2563eb',
-              blueHover: '#1d4ed8',
-              muted: '#94a3b8',
+            corporate: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              200: '#e2e8f0',
+              300: '#cbd5e1',
+              400: '#94a3b8',
+              500: '#64748b',
+              600: '#475569',
+              700: '#334155',
+              800: '#1e293b',
+              900: '#0f172a',
+              primary: '#0284c7',
+              primaryHover: '#0369a1',
             }
           }
         }
@@ -45,156 +44,183 @@
   </script>
   <style>
     body {
-      background-color: #070a11;
-      color: #f8fafc;
+      background-color: #f8fafc;
+      color: #1e293b;
       font-family: 'IBM Plex Sans', sans-serif;
     }
     .tabular-nums { font-variant-numeric: tabular-nums; }
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: #070a11; }
-    ::-webkit-scrollbar-thumb { background: #243048; border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #334155; }
   </style>
 </head>
-<body class="bg-industrial-950 text-slate-100 antialiased flex flex-col min-h-screen selection:bg-industrial-accent selection:text-industrial-950">
-
-  <!-- TOP HEADER -->
-  <div class="border-b border-industrial-border bg-industrial-900 text-xs py-2.5 px-4 sm:px-8">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 font-mono text-[11px]">
-      <div class="flex items-center space-x-4 text-slate-400">
-        <span class="flex items-center gap-2 text-slate-200">
-          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-          DOKUMENTASI TEKNIS & PUSAT CAD 3D
-        </span>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+  <!-- TOP BAR -->
+  <div class="border-b border-slate-200 bg-white text-xs py-2.5 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-[12px] text-slate-600 font-sans">
+      <div class="flex items-center space-x-3">
+        <span class="font-semibold text-slate-900">PT SETA Technology Asia</span>
+        <span class="text-slate-300">|</span>
+        <span>Spesialis Otomasi Feeding & Sorting Industri</span>
       </div>
-      <div class="flex items-center space-x-6 text-slate-300">
-        <a href="tel:+6282213928230" class="hover:text-industrial-accent transition flex items-center gap-1.5">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-industrial-accent"></i>
-          <span>Hotline: <strong class="text-white font-semibold">+62 822 1392 8230</strong></span>
+      <div class="flex items-center space-x-6 text-slate-600">
+        <a href="tel:+6282213928230" class="hover:text-corporate-primary transition flex items-center gap-1.5 font-medium">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-corporate-primary"></i>
+          <span>Hubungi Tim Sales: <strong>+62 822 1392 8230</strong></span>
         </a>
+        <span class="text-slate-300">|</span>
+        <a href="mailto:raden@seta.co.id" class="hover:text-corporate-primary transition">raden@seta.co.id</a>
       </div>
     </div>
   </div>
 
   <!-- NAVIGATION -->
-  <nav class="sticky top-0 z-50 bg-industrial-900/95 backdrop-blur border-b border-industrial-border">
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
       <a href="index.html" class="flex items-center space-x-3.5 group">
-        <div class="w-10 h-10 rounded bg-industrial-blue flex items-center justify-center font-display font-extrabold text-white text-lg tracking-wider border border-industrial-blueHover shadow-md">
+        <div class="w-10 h-10 rounded-lg bg-corporate-primary flex items-center justify-center font-display font-extrabold text-white text-lg tracking-wider shadow-sm">
           ST
         </div>
         <div>
-          <div class="text-lg font-bold tracking-tight text-white font-display group-hover:text-industrial-accent transition">
-            SETA <span class="text-slate-300">TECHNOLOGY</span>
+          <div class="text-lg font-bold tracking-tight text-slate-900 font-display">
+            SETA <span class="text-corporate-primary">TECHNOLOGY</span>
           </div>
-          <div class="text-[10px] tracking-widest text-slate-400 font-mono -mt-0.5 font-semibold uppercase">
-            Asia • Feeding & Sorting Machinery
+          <div class="text-[11px] tracking-wider text-slate-500 font-sans font-medium uppercase">
+            Asia • Automation Machinery
           </div>
         </div>
       </a>
 
-      <div class="hidden lg:flex items-center space-x-8 text-xs font-mono font-bold uppercase tracking-wider">
-        <a href="index.html" class="text-slate-300 hover:text-industrial-accent transition pb-1">Home</a>
-        <a href="product.html" class="text-slate-300 hover:text-industrial-accent transition pb-1">Bowl Feeder</a>
-        <a href="product-automatic-sorting-machine.html" class="text-slate-300 hover:text-industrial-accent transition pb-1">Optical Sorter</a>
-        <a href="product-sorting-house.html" class="text-slate-300 hover:text-industrial-accent transition pb-1">Sorting House</a>
-        <a href="about.html" class="text-slate-300 hover:text-industrial-accent transition pb-1">Tentang Kami</a>
-        <a href="download.html" class="text-industrial-accent border-b-2 border-industrial-accent pb-1">Katalog & CAD</a>
-        <a href="contact.html" class="text-slate-300 hover:text-industrial-accent transition pb-1">Kontak & RFQ</a>
+      <div class="hidden lg:flex items-center space-x-8 text-sm font-sans font-semibold">
+        <a href="index.html" class="text-slate-700 hover:text-corporate-primary transition">Beranda</a>
+        
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-slate-700 hover:text-corporate-primary transition py-2">
+            <span>Produk & Mesin</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-hover:rotate-180 transition"></i>
+          </button>
+          
+          <div class="absolute left-0 top-full mt-1 w-80 bg-white border border-slate-200 rounded-xl shadow-xl p-2 hidden group-hover:block z-50">
+            <a href="product.html" class="block p-3 rounded-lg hover:bg-slate-50 transition">
+              <div class="text-slate-900 font-semibold text-sm">Vibratory Bowl Feeder</div>
+              <div class="text-xs text-slate-500 mt-0.5">Sistem pengumpan part otomatis hingga 600 PPM</div>
+            </a>
+            <a href="product-automatic-sorting-machine.html" class="block p-3 rounded-lg hover:bg-slate-50 transition border-t border-slate-100">
+              <div class="text-slate-900 font-semibold text-sm">Optical Sorting Machine</div>
+              <div class="text-xs text-slate-500 mt-0.5">Inspeksi visual optik dengan akurasi ±0.01 mm</div>
+            </a>
+            <a href="product-sorting-house.html" class="block p-3 rounded-lg hover:bg-slate-50 transition border-t border-slate-100">
+              <div class="text-slate-900 font-semibold text-sm">Integrated Sorting House</div>
+              <div class="text-xs text-slate-500 mt-0.5">Kabin stasiun perakitan kedap suara &lt; 70 dBA</div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="text-slate-700 hover:text-corporate-primary transition">Tentang Kami</a>
+        <a href="download.html" class="text-corporate-primary border-b-2 border-corporate-primary pb-1">Katalog & CAD</a>
+        <a href="contact.html" class="text-slate-700 hover:text-corporate-primary transition">Kontak & RFQ</a>
       </div>
 
       <div class="hidden sm:flex items-center space-x-4">
-        <a href="contact.html" class="px-5 py-2.5 rounded-lg bg-industrial-accent hover:bg-industrial-accentHover text-industrial-950 font-bold text-xs font-mono uppercase tracking-wider transition shadow-lg flex items-center gap-2">
+        <a href="contact.html" class="px-5 py-2.5 rounded-lg bg-corporate-primary hover:bg-corporate-primaryHover text-white font-semibold text-sm transition shadow-sm flex items-center gap-2">
           <span>Minta Penawaran (RFQ)</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
       </div>
+
+      <div class="lg:hidden flex items-center">
+        <button id="mobile-menu-btn" class="p-2 text-slate-600 hover:text-slate-900">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden hidden border-b border-slate-200 bg-white px-6 py-4 space-y-3 text-sm font-medium">
+      <a href="index.html" class="block text-slate-700 hover:text-corporate-primary py-1">Beranda</a>
+      <a href="product.html" class="block text-slate-700 hover:text-corporate-primary py-1">Vibratory Bowl Feeder</a>
+      <a href="product-automatic-sorting-machine.html" class="block text-slate-700 hover:text-corporate-primary py-1">Optical Sorting Machine</a>
+      <a href="product-sorting-house.html" class="block text-slate-700 hover:text-corporate-primary py-1">Integrated Sorting House</a>
+      <a href="about.html" class="block text-slate-700 hover:text-corporate-primary py-1">Tentang Kami</a>
+      <a href="download.html" class="block text-slate-700 hover:text-corporate-primary py-1">Katalog & CAD</a>
+      <a href="contact.html" class="block text-slate-700 hover:text-corporate-primary py-1">Kontak & RFQ</a>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <section class="py-16 bg-industrial-900 border-b border-industrial-border">
+  <section class="py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
       <div class="max-w-3xl space-y-4">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-industrial-800 border border-industrial-border text-xs font-mono text-industrial-accent font-semibold">
-          DOKUMEN TEKNIK RESMI
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold text-corporate-primary">
+          DOKUMENTASI TEKNIS & PUSAT CAD 3D
         </div>
-        <h1 class="font-display text-4xl sm:text-5xl font-bold text-white tracking-tight">
+        <h1 class="font-display text-4xl sm:text-5xl font-bold text-slate-900 leading-tight">
           Pusat Unduhan Brosur & Data Teknis CAD.
         </h1>
-        <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
           Dapatkan akses langsung ke lembar spesifikasi teknis PDF, diagram dimensi pemasangan, dan pengajuan file 3D CAD (.STEP) untuk kebutuhan simulasi rekayasa mesin Anda.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- DOWNLOADS GRID -->
-  <section class="py-20 bg-industrial-950 border-b border-industrial-border">
+  <section class="py-20 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
       
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- ITEM 1 -->
-        <div class="p-6 rounded-2xl bg-industrial-900 border border-industrial-border flex flex-col justify-between">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
-            <div class="w-12 h-12 rounded-xl bg-industrial-800 border border-industrial-border flex items-center justify-center text-industrial-accent">
+            <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-corporate-primary">
               <i data-lucide="file-text" class="w-6 h-6"></i>
             </div>
             <div>
-              <span class="text-[11px] font-mono text-slate-400">PDF • 4.2 MB • Versi 2026</span>
-              <h3 class="font-display text-lg font-bold text-white mt-1">Katalog Produk Utama 2026</h3>
+              <span class="text-xs text-slate-400 font-medium">PDF • 4.2 MB • Versi 2026</span>
+              <h3 class="font-display text-lg font-bold text-slate-900 mt-1">Katalog Produk Utama 2026</h3>
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed">
+            <p class="text-xs text-slate-600 leading-relaxed">
               Katalog komprehensif seluruh lini Vibratory Bowl Feeder, Linear Feeder, Optical Sorter, dan Sorting House beserta tabel matriks pemilihan tipe.
             </p>
           </div>
-          <div class="mt-8 pt-4 border-t border-industrial-border">
-            <a href="assets/catalog-seta-2026.pdf" download class="w-full py-2.5 rounded-lg bg-industrial-800 hover:bg-industrial-700 text-white font-semibold text-xs border border-industrial-border transition flex items-center justify-center gap-2">
-              <i data-lucide="download" class="w-4 h-4 text-industrial-accent"></i>
+          <div class="mt-8 pt-4 border-t border-slate-100">
+            <a href="assets/catalog-seta-2026.pdf" download class="w-full py-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs border border-slate-200 transition flex items-center justify-center gap-2">
+              <i data-lucide="download" class="w-4 h-4 text-corporate-primary"></i>
               <span>Download Katalog PDF</span>
             </a>
           </div>
         </div>
 
-        <!-- ITEM 2 -->
-        <div class="p-6 rounded-2xl bg-industrial-900 border border-industrial-border flex flex-col justify-between">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
-            <div class="w-12 h-12 rounded-xl bg-industrial-800 border border-industrial-border flex items-center justify-center text-industrial-accent">
+            <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-corporate-primary">
               <i data-lucide="cpu" class="w-6 h-6"></i>
             </div>
             <div>
-              <span class="text-[11px] font-mono text-slate-400">PDF • 2.8 MB • Rev 1.4</span>
-              <h3 class="font-display text-lg font-bold text-white mt-1">Datasheet Seri PSG Sorter</h3>
+              <span class="text-xs text-slate-400 font-medium">PDF • 2.8 MB • Rev 1.4</span>
+              <h3 class="font-display text-lg font-bold text-slate-900 mt-1">Datasheet Seri PSG Sorter</h3>
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed">
+            <p class="text-xs text-slate-600 leading-relaxed">
               Lembar data teknis mendalam mengenai sistem kamera inspeksi, resolusi lensa optik, diagram kelistrikan I/O PLC, dan spesifikasi udara pneumatik.
             </p>
           </div>
-          <div class="mt-8 pt-4 border-t border-industrial-border">
-            <a href="assets/datasheet-psg-series.pdf" download class="w-full py-2.5 rounded-lg bg-industrial-800 hover:bg-industrial-700 text-white font-semibold text-xs border border-industrial-border transition flex items-center justify-center gap-2">
-              <i data-lucide="download" class="w-4 h-4 text-industrial-accent"></i>
+          <div class="mt-8 pt-4 border-t border-slate-100">
+            <a href="assets/datasheet-psg-series.pdf" download class="w-full py-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs border border-slate-200 transition flex items-center justify-center gap-2">
+              <i data-lucide="download" class="w-4 h-4 text-corporate-primary"></i>
               <span>Download Datasheet PDF</span>
             </a>
           </div>
         </div>
 
-        <!-- ITEM 3: 3D STEP REQUEST -->
-        <div class="p-6 rounded-2xl bg-industrial-900 border border-industrial-border flex flex-col justify-between">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
           <div class="space-y-4">
-            <div class="w-12 h-12 rounded-xl bg-industrial-800 border border-industrial-border flex items-center justify-center text-emerald-400">
+            <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-emerald-600">
               <i data-lucide="box" class="w-6 h-6"></i>
             </div>
             <div>
-              <span class="text-[11px] font-mono text-emerald-400 font-semibold">CAD 3D Model (.STEP)</span>
-              <h3 class="font-display text-lg font-bold text-white mt-1">Request File CAD 3D (.STEP)</h3>
+              <span class="text-xs text-emerald-600 font-semibold">CAD 3D Model (.STEP)</span>
+              <h3 class="font-display text-lg font-bold text-slate-900 mt-1">Request File CAD 3D (.STEP)</h3>
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed">
+            <p class="text-xs text-slate-600 leading-relaxed">
               Memerlukan file model 3D untuk disimulasikan ke dalam rancangan layout mesin pabrik Anda? Kirimkan spesifikasi envelope dimensi yang diinginkan.
             </p>
           </div>
-          <div class="mt-8 pt-4 border-t border-industrial-border">
-            <a href="contact.html?type=cad_request" class="w-full py-2.5 rounded-lg bg-industrial-accent hover:bg-industrial-accentHover text-industrial-950 font-bold text-xs font-mono uppercase tracking-wider transition flex items-center justify-center gap-2 shadow">
+          <div class="mt-8 pt-4 border-t border-slate-100">
+            <a href="contact.html?type=cad_request" class="w-full py-2.5 rounded-lg bg-corporate-primary hover:bg-corporate-primaryHover text-white font-semibold text-xs transition flex items-center justify-center gap-2 shadow-sm">
               <span>Minta File CAD 3D</span>
               <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
@@ -207,56 +233,60 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-industrial-950 text-slate-400 text-xs py-14 mt-auto border-t border-industrial-border">
+  <footer class="bg-white text-slate-600 text-xs py-14 mt-auto border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-industrial-border">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-200">
         
         <div class="md:col-span-4 space-y-4">
           <div class="flex items-center space-x-3">
-            <div class="w-8 h-8 rounded bg-industrial-blue flex items-center justify-center font-display font-extrabold text-white text-base">
+            <div class="w-8 h-8 rounded bg-corporate-primary flex items-center justify-center font-display font-extrabold text-white text-base">
               ST
             </div>
-            <span class="font-display font-bold text-lg text-white">SETA TECHNOLOGY ASIA</span>
+            <span class="font-display font-bold text-lg text-slate-900">SETA TECHNOLOGY ASIA</span>
           </div>
-          <p class="text-slate-400 text-xs leading-relaxed">
-            Spesialis perancangan dan manufaktur Vibratory Bowl Feeder kustom, Mesin Sortir Optik Otomatis, dan Sistem Otomasi Pabrik Presisi Tinggi di Indonesia.
+          <p class="text-slate-500 text-xs leading-relaxed">
+            Perancangan dan manufaktur Vibratory Bowl Feeder kustom, Mesin Sortir Optik Otomatis, dan Sistem Otomasi Pabrik Presisi Tinggi di Indonesia.
           </p>
+          <div class="text-[11px] text-slate-400">
+            PT SETA Technology Asia • Jakarta Barat
+          </div>
         </div>
 
-        <div class="md:col-span-3 space-y-3 font-mono">
-          <div class="text-xs font-bold text-white uppercase tracking-wider">Lini Produk</div>
+        <div class="md:col-span-3 space-y-3 font-sans">
+          <div class="text-xs font-bold text-slate-900 uppercase tracking-wider">Lini Produk</div>
           <ul class="space-y-2 text-xs">
-            <li><a href="product.html" class="hover:text-industrial-accent transition">Vibratory Bowl Feeder</a></li>
-            <li><a href="product-automatic-sorting-machine.html" class="hover:text-industrial-accent transition">Automatic Sorting Machine</a></li>
-            <li><a href="product-sorting-house.html" class="hover:text-industrial-accent transition">Integrated Sorting House</a></li>
+            <li><a href="product.html" class="hover:text-corporate-primary transition">Vibratory Bowl Feeder</a></li>
+            <li><a href="product-automatic-sorting-machine.html" class="hover:text-corporate-primary transition">Automatic Sorting Machine</a></li>
+            <li><a href="product-sorting-house.html" class="hover:text-corporate-primary transition">Integrated Sorting House</a></li>
+            <li><a href="download.html" class="hover:text-corporate-primary transition">Katalog & Lembar Data Teknis</a></li>
           </ul>
         </div>
 
-        <div class="md:col-span-2 space-y-3 font-mono">
-          <div class="text-xs font-bold text-white uppercase tracking-wider">Perusahaan</div>
+        <div class="md:col-span-2 space-y-3 font-sans">
+          <div class="text-xs font-bold text-slate-900 uppercase tracking-wider">Perusahaan</div>
           <ul class="space-y-2 text-xs">
-            <li><a href="about.html" class="hover:text-industrial-accent transition">Tentang Kami</a></li>
-            <li><a href="download.html" class="text-industrial-accent font-bold">Katalog & CAD</a></li>
-            <li><a href="contact.html" class="hover:text-industrial-accent transition">Kontak & RFQ</a></li>
+            <li><a href="about.html" class="hover:text-corporate-primary transition">Tentang Kami</a></li>
+            <li><a href="contact.html" class="hover:text-corporate-primary transition">Hubungi Kami</a></li>
+            <li><a href="contact.html" class="hover:text-corporate-primary transition">Lokasi Kantor</a></li>
           </ul>
         </div>
 
         <div class="md:col-span-3 space-y-3">
-          <div class="text-xs font-mono font-bold text-white uppercase tracking-wider">Kantor Pusat Jakarta</div>
-          <p class="text-xs text-slate-400 leading-relaxed">
+          <div class="text-xs font-bold text-slate-900 uppercase tracking-wider">Kantor Pusat Jakarta</div>
+          <p class="text-xs text-slate-500 leading-relaxed">
             Grand Slipi Tower Lt. 9 Unit O, Jl. Letjen S. Parman Kav. 22–24, Palmerah, Jakarta Barat 11480.
           </p>
-          <div class="space-y-1 font-mono text-xs text-slate-300">
-            <div>Tel: <a href="tel:+6282213928230" class="text-white hover:text-industrial-accent font-semibold">+62 822 1392 8230</a></div>
-            <div>Email: <a href="mailto:raden@seta.co.id" class="text-white hover:text-industrial-accent font-semibold">raden@seta.co.id</a></div>
+          <div class="space-y-1 text-xs text-slate-600">
+            <div>Tel: <a href="tel:+6282213928230" class="text-slate-900 hover:text-corporate-primary font-semibold">+62 822 1392 8230</a></div>
+            <div>Email: <a href="mailto:raden@seta.co.id" class="text-slate-900 hover:text-corporate-primary font-semibold">raden@seta.co.id</a></div>
           </div>
         </div>
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-[11px] font-mono text-slate-500 gap-2">
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-[11px] text-slate-500 gap-2">
         <div>&copy; 2026 PT SETA Technology Asia. All rights reserved.</div>
-        <div>Rekayasa Presisi • SAK EMKM & ISO Compliance</div>
+        <div>Standar Mutu Rekayasa Industri Presisi</div>
       </div>
 
     </div>
@@ -264,6 +294,13 @@
 
   <script>
     lucide.createIcons();
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
   </script>
 </body>
 </html>
